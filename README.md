@@ -179,5 +179,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Kubernetes Services & kube-proxy (iptables vs IPVS)](docs/kubernetes-services-kube-proxy.md)
 
+- [Kubernetes Ingress Controllers & Gateway API](docs/kubernetes-ingress-controllers.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

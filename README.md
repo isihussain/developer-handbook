@@ -79,5 +79,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [BBR Congestion Control (Bottleneck Bandwidth and RTT)](docs/tcp-bbr-congestion-control.md)
 
+- [QUIC & HTTP/3 Transport Protocol](docs/quic-http3-protocol.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

@@ -35,5 +35,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [OAuth 2.0 & OIDC Authorization](docs/oauth2-grant-types.md)
 
+- [Cross-Origin Resource Sharing (CORS)](docs/cors-configuration.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

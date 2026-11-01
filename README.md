@@ -163,5 +163,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Parsing Algorithms: LL(k), LR(k), and LALR(1)](docs/parser-lalr-vs-llk.md)
 
+- [Garbage Collection: Mark-and-Sweep & Tri-Color](docs/garbage-collection-mark-sweep.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

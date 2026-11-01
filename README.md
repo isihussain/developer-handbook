@@ -153,5 +153,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Token Bucket & Leaky Bucket Rate Limiting](docs/rate-limiting-token-bucket.md)
 
+- [OpenTelemetry Distributed Tracing](docs/distributed-tracing-opentelemetry.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

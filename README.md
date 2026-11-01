@@ -23,5 +23,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [GNU Debugger (GDB) Reference](docs/gdb-cheatsheet.md)
 
+- [Valgrind Memcheck & Memory Profiling](docs/valgrind-memcheck.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

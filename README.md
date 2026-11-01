@@ -45,5 +45,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [CAP Theorem & PACELC Distributed Systems](docs/cap-theorem.md)
 
+- [RESTful API Architecture](docs/rest-api-best-practices.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

@@ -87,5 +87,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [IP Multicast & IGMP Protocols](docs/ip-multicast-igmp.md)
 
+- [WireGuard Protocol & Cryptokey Routing](docs/wireguard-vpn-cryptography.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

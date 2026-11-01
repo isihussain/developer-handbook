@@ -175,5 +175,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Lock-Free Data Structures & Compare-And-Swap (CAS)](docs/lock-free-atomic-cas.md)
 
+- [Kubernetes Pod Lifecycle & Probes](docs/kubernetes-pod-lifecycle.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

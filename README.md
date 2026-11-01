@@ -19,5 +19,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Linux Namespaces and Cgroups v2](docs/linux-namespaces-cgroups.md)
 
+- [Extended Berkeley Packet Filter (eBPF)](docs/ebpf-basics.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

@@ -27,5 +27,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [strace System Call Tracing](docs/strace-system-calls.md)
 
+- [Cryptographic Hash Functions](docs/crypto-hash-functions.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

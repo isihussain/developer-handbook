@@ -49,5 +49,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [gRPC & Protocol Buffers v3](docs/grpc-protocol-buffers.md)
 
+- [WebSocket RFC 6455 Protocol](docs/websocket-protocol.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

@@ -135,5 +135,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Two-Phase Commit Protocol (2PC)](docs/distributed-transactions-2pc.md)
 
+- [Command Query Responsibility Segregation (CQRS)](docs/event-driven-cqrs-architecture.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

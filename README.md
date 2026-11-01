@@ -39,5 +39,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [SQL Indexing & Query Optimization](docs/sql-indexing-strategies.md)
 
+- [Database ACID Transaction Properties](docs/database-acid-properties.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

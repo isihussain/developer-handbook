@@ -117,5 +117,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [PostgreSQL Write-Ahead Logging (WAL) & Streaming](docs/postgresql-wal-replication.md)
 
+- [PostgreSQL MVCC & Autovacuum Tuning](docs/postgresql-vacuum-mvcc.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

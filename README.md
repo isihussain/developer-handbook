@@ -11,5 +11,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [DNS Record Types & Resolution](docs/dns-record-types.md)
 
+- [TLS 1.3 Cryptographic Handshake](docs/tls-ssl-handshake.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

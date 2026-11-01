@@ -95,5 +95,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [NAT Traversal: STUN, TURN, and ICE](docs/nat-traversal-stun-turn-ice.md)
 
+- [AES-256-GCM Authenticated Encryption](docs/aes-gcm-authenticated-encryption.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

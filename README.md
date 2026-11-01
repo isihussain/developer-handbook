@@ -151,5 +151,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Circuit Breaker Pattern in Microservices](docs/circuit-breaker-resilience.md)
 
+- [Token Bucket & Leaky Bucket Rate Limiting](docs/rate-limiting-token-bucket.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

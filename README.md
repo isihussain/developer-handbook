@@ -157,5 +157,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Static Single Assignment (SSA) Form](docs/compiler-intermediate-representation-ssa.md)
 
+- [Chaitin-Briggs Graph Coloring Register Allocation](docs/register-allocation-graph-coloring.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

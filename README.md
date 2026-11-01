@@ -57,5 +57,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Linux Cgroups v2 CPU Throttling](docs/linux-cgroups-cpu-throttling.md)
 
+- [Linux Transparent Hugepages (THP)](docs/linux-hugepages-memory.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

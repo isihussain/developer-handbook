@@ -93,5 +93,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [ARP Spoofing & Dynamic ARP Inspection (DAI)](docs/arp-spoofing-mitigation.md)
 
+- [NAT Traversal: STUN, TURN, and ICE](docs/nat-traversal-stun-turn-ice.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

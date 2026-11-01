@@ -183,5 +183,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Docker Multi-Stage Build Optimization](docs/docker-multistage-builds.md)
 
+- [Helm v3 Package Management & Go Templating](docs/helm-charts-templating.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

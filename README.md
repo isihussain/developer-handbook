@@ -77,5 +77,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [TCP SYN Flood & SYN Cookies (net.ipv4.tcp_syncookies)](docs/tcp-syn-flood-syncookies.md)
 
+- [BBR Congestion Control (Bottleneck Bandwidth and RTT)](docs/tcp-bbr-congestion-control.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

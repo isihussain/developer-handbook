@@ -155,5 +155,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [OpenTelemetry Distributed Tracing](docs/distributed-tracing-opentelemetry.md)
 
+- [Static Single Assignment (SSA) Form](docs/compiler-intermediate-representation-ssa.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

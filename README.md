@@ -83,5 +83,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [DNSSEC Cryptographic Validation](docs/dnssec-validation.md)
 
+- [Border Gateway Protocol (BGP) Routing](docs/bgp-routing-fundamentals.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

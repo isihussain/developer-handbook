@@ -85,5 +85,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Border Gateway Protocol (BGP) Routing](docs/bgp-routing-fundamentals.md)
 
+- [IP Multicast & IGMP Protocols](docs/ip-multicast-igmp.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

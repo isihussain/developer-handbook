@@ -9,5 +9,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [TCP/IP Protocol Suite](docs/tcp-ip-fundamentals.md)
 
+- [DNS Record Types & Resolution](docs/dns-record-types.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

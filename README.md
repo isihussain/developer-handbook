@@ -109,5 +109,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [HMAC-SHA512 Webhook & API Request Signing](docs/hmac-sha512-api-signing.md)
 
+- [SAML 2.0 Single Sign-On (SSO)](docs/saml-sso-architecture.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

@@ -43,5 +43,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Raft Consensus Algorithm](docs/raft-consensus-algorithm.md)
 
+- [CAP Theorem & PACELC Distributed Systems](docs/cap-theorem.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

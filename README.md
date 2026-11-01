@@ -189,5 +189,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [PromQL Metrics & Alerting Engine](docs/prometheus-promql-metrics.md)
 
+- [Grafana Declarative Dashboard Provisioning](docs/grafana-dashboard-provisioning.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

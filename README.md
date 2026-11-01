@@ -69,5 +69,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [systemd journald Logging Architecture](docs/systemd-journald-logging.md)
 
+- [Linux Core Dump Configuration & GDB](docs/linux-core-dumps-gdb.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

@@ -13,5 +13,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [TLS 1.3 Cryptographic Handshake](docs/tls-ssl-handshake.md)
 
+- [Subnetting and CIDR Notation](docs/subnets-cidr-notation.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

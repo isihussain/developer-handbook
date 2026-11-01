@@ -63,5 +63,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [POSIX Shared Memory (shm_open)](docs/posix-shared-memory-shm.md)
 
+- [Linux io_uring Asynchronous I/O](docs/linux-io-uring-async.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

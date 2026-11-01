@@ -103,5 +103,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Zero-Knowledge Proofs (ZK-SNARKs & ZK-STARKs)](docs/zero-knowledge-proofs-intro.md)
 
+- [Time-Based One-Time Password (TOTP RFC 6238)](docs/totp-2fa-rfc6238.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

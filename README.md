@@ -31,5 +31,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Asymmetric Key Cryptography](docs/asymmetric-cryptography.md)
 
+- [JSON Web Tokens (JWT)](docs/jwt-tokens.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

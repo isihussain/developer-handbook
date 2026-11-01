@@ -113,5 +113,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [SSH Certificate Authority Architecture](docs/ssh-certificates-ca.md)
 
+- [SQL Injection Prevention & Parameterization](docs/sql-injection-mitigation.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

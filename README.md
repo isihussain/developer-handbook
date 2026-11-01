@@ -129,5 +129,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Log-Structured Merge-Trees (LSM) vs B-Trees](docs/lsm-trees-vs-b-trees.md)
 
+- [Vector Embeddings & HNSW Graph Indexing](docs/vector-embeddings-hnsw-indexing.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

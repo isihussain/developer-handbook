@@ -165,5 +165,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Garbage Collection: Mark-and-Sweep & Tri-Color](docs/garbage-collection-mark-sweep.md)
 
+- [Just-In-Time (JIT) Tracing & Deoptimization](docs/jit-compilation-tracing.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

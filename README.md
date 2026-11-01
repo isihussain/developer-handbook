@@ -125,5 +125,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Redis Cluster & Hash Slot Sharding](docs/redis-cluster-hash-slots.md)
 
+- [Distributed Locking with Redlock Algorithm](docs/distributed-locking-redlock.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

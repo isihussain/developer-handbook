@@ -171,5 +171,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [SIMD Parallelism: AVX2 and ARM NEON](docs/simd-vectorization-avx2.md)
 
+- [Hardware Memory Models: Acquire-Release Semantics](docs/memory-ordering-acquire-release.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

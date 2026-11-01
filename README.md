@@ -65,5 +65,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Linux io_uring Asynchronous I/O](docs/linux-io-uring-async.md)
 
+- [File Descriptor Limits (ulimit & sysctl)](docs/linux-file-descriptors-limits.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

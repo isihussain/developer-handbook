@@ -143,5 +143,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Bloom Filters & Count-Min Sketches](docs/bloom-filters-probabilistic.md)
 
+- [Consistent Hashing & Distributed Hash Tables](docs/consistent-hashing-dht.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

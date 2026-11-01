@@ -91,5 +91,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Path MTU Discovery & TCP MSS Clamping](docs/mtu-mss-path-discovery.md)
 
+- [ARP Spoofing & Dynamic ARP Inspection (DAI)](docs/arp-spoofing-mitigation.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

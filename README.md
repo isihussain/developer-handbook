@@ -193,5 +193,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [GitHub Actions Advanced Caching & Matrix Builds](docs/github-actions-caching-matrix.md)
 
+- [Linux Security Hardening (CIS Benchmark)](docs/linux-hardening-benchmarks.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

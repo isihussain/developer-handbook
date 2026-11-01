@@ -141,5 +141,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [RabbitMQ Exchange Routing Patterns](docs/rabbitmq-exchange-routing.md)
 
+- [Bloom Filters & Count-Min Sketches](docs/bloom-filters-probabilistic.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

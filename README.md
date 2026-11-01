@@ -99,5 +99,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Diffie-Hellman Key Exchange (ECDH)](docs/diffie-hellman-key-exchange.md)
 
+- [X.509 Certificate Chains & Public Key Infrastructure](docs/tls-certificate-chains-pki.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

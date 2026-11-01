@@ -173,5 +173,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Hardware Memory Models: Acquire-Release Semantics](docs/memory-ordering-acquire-release.md)
 
+- [Lock-Free Data Structures & Compare-And-Swap (CAS)](docs/lock-free-atomic-cas.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

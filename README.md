@@ -29,5 +29,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Cryptographic Hash Functions](docs/crypto-hash-functions.md)
 
+- [Asymmetric Key Cryptography](docs/asymmetric-cryptography.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

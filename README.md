@@ -55,5 +55,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [LLVM Intermediate Representation (IR)](docs/llvm-ir-fundamentals.md)
 
+- [Linux Cgroups v2 CPU Throttling](docs/linux-cgroups-cpu-throttling.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

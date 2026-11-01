@@ -161,5 +161,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Lexical Analysis: NFAs to DFAs (Thompson & Subset)](docs/lexical-analysis-dfa-nfa.md)
 
+- [Parsing Algorithms: LL(k), LR(k), and LALR(1)](docs/parser-lalr-vs-llk.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

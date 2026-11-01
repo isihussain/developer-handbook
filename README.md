@@ -41,5 +41,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Database ACID Transaction Properties](docs/database-acid-properties.md)
 
+- [Raft Consensus Algorithm](docs/raft-consensus-algorithm.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

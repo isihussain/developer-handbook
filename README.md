@@ -81,5 +81,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [QUIC & HTTP/3 Transport Protocol](docs/quic-http3-protocol.md)
 
+- [DNSSEC Cryptographic Validation](docs/dnssec-validation.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

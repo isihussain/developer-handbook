@@ -123,5 +123,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Redis Sentinel Failover & Monitoring](docs/redis-sentinel-high-availability.md)
 
+- [Redis Cluster & Hash Slot Sharding](docs/redis-cluster-hash-slots.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

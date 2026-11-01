@@ -149,5 +149,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Vector Clocks & Causal Ordering](docs/vector-clocks-versioning.md)
 
+- [Circuit Breaker Pattern in Microservices](docs/circuit-breaker-resilience.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

@@ -43,6 +43,8 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Raft Consensus Algorithm](docs/raft-consensus-algorithm.md)
 
+- [Paxos Distributed Consensus Protocol](docs/paxos-distributed-consensus-protocol.md)
+
 - [CAP Theorem & PACELC Distributed Systems](docs/cap-theorem.md)
 
 - [RESTful API Architecture](docs/rest-api-best-practices.md)
@@ -174,6 +176,8 @@ A collection of developer references, architectural patterns, and practical guid
 - [Hardware Memory Models: Acquire-Release Semantics](docs/memory-ordering-acquire-release.md)
 
 - [Lock-Free Data Structures & Compare-And-Swap (CAS)](docs/lock-free-atomic-cas.md)
+
+- [C++20 Memory Model & Sequential Consistency](docs/cpp20-memory-model-sequential-consistency.md)
 
 - [Kubernetes Pod Lifecycle & Probes](docs/kubernetes-pod-lifecycle.md)
 

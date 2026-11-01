@@ -73,5 +73,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Linux Capabilities (cap_net_bind_service)](docs/linux-capabilities-privileges.md)
 
+- [Linux Secure Computing Mode (seccomp)](docs/linux-seccomp-bpf-filters.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

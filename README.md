@@ -89,5 +89,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [WireGuard Protocol & Cryptokey Routing](docs/wireguard-vpn-cryptography.md)
 
+- [Path MTU Discovery & TCP MSS Clamping](docs/mtu-mss-path-discovery.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

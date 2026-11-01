@@ -51,5 +51,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [WebSocket RFC 6455 Protocol](docs/websocket-protocol.md)
 
+- [Compiler AST Lowering & IR Generation](docs/compiler-ast-lowering.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

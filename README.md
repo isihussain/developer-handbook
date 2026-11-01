@@ -169,5 +169,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [ELF Dynamic Linking: PLT and GOT](docs/dynamic-linker-elf-plt-got.md)
 
+- [SIMD Parallelism: AVX2 and ARM NEON](docs/simd-vectorization-avx2.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

@@ -121,5 +121,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [PostgreSQL Declarative Table Partitioning](docs/postgresql-partitioning-declarative.md)
 
+- [Redis Sentinel Failover & Monitoring](docs/redis-sentinel-high-availability.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

@@ -61,5 +61,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Virtual Memory & Memory-Mapped I/O (mmap)](docs/linux-virtual-memory-mmap.md)
 
+- [POSIX Shared Memory (shm_open)](docs/posix-shared-memory-shm.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

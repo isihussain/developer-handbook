@@ -127,5 +127,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Distributed Locking with Redlock Algorithm](docs/distributed-locking-redlock.md)
 
+- [Log-Structured Merge-Trees (LSM) vs B-Trees](docs/lsm-trees-vs-b-trees.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

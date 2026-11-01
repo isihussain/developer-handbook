@@ -145,5 +145,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Consistent Hashing & Distributed Hash Tables](docs/consistent-hashing-dht.md)
 
+- [SWIM Protocol & Distributed Failure Detection](docs/gossip-protocol-swim.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

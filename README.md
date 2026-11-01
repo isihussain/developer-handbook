@@ -59,5 +59,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Linux Transparent Hugepages (THP)](docs/linux-hugepages-memory.md)
 
+- [Virtual Memory & Memory-Mapped I/O (mmap)](docs/linux-virtual-memory-mmap.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

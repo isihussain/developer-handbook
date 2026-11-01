@@ -139,5 +139,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Apache Kafka Partitioning & Consumer Groups](docs/kafka-partitions-consumer-groups.md)
 
+- [RabbitMQ Exchange Routing Patterns](docs/rabbitmq-exchange-routing.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

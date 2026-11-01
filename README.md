@@ -25,5 +25,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Valgrind Memcheck & Memory Profiling](docs/valgrind-memcheck.md)
 
+- [strace System Call Tracing](docs/strace-system-calls.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

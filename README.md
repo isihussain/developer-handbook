@@ -47,5 +47,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [RESTful API Architecture](docs/rest-api-best-practices.md)
 
+- [gRPC & Protocol Buffers v3](docs/grpc-protocol-buffers.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

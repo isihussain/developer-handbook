@@ -177,5 +177,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Kubernetes Pod Lifecycle & Probes](docs/kubernetes-pod-lifecycle.md)
 
+- [Kubernetes Services & kube-proxy (iptables vs IPVS)](docs/kubernetes-services-kube-proxy.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

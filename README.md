@@ -71,5 +71,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Linux Core Dump Configuration & GDB](docs/linux-core-dumps-gdb.md)
 
+- [Linux Capabilities (cap_net_bind_service)](docs/linux-capabilities-privileges.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

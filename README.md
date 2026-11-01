@@ -105,5 +105,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Time-Based One-Time Password (TOTP RFC 6238)](docs/totp-2fa-rfc6238.md)
 
+- [Argon2id & Bcrypt Password Hashing](docs/bcrypt-argon2-password-hashing.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

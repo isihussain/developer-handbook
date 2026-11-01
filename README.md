@@ -37,5 +37,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Cross-Origin Resource Sharing (CORS)](docs/cors-configuration.md)
 
+- [SQL Indexing & Query Optimization](docs/sql-indexing-strategies.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

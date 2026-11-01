@@ -17,5 +17,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Linux Process Signals](docs/linux-signals.md)
 
+- [Linux Namespaces and Cgroups v2](docs/linux-namespaces-cgroups.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

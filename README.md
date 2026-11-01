@@ -111,5 +111,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [SAML 2.0 Single Sign-On (SSO)](docs/saml-sso-architecture.md)
 
+- [SSH Certificate Authority Architecture](docs/ssh-certificates-ca.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

@@ -187,5 +187,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Terraform State Management & Remote Backends](docs/terraform-state-management.md)
 
+- [PromQL Metrics & Alerting Engine](docs/prometheus-promql-metrics.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

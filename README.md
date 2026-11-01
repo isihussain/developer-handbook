@@ -97,5 +97,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [AES-256-GCM Authenticated Encryption](docs/aes-gcm-authenticated-encryption.md)
 
+- [Diffie-Hellman Key Exchange (ECDH)](docs/diffie-hellman-key-exchange.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

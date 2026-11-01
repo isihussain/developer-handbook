@@ -115,5 +115,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [SQL Injection Prevention & Parameterization](docs/sql-injection-mitigation.md)
 
+- [PostgreSQL Write-Ahead Logging (WAL) & Streaming](docs/postgresql-wal-replication.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

@@ -147,5 +147,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [SWIM Protocol & Distributed Failure Detection](docs/gossip-protocol-swim.md)
 
+- [Vector Clocks & Causal Ordering](docs/vector-clocks-versioning.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

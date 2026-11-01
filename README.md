@@ -21,5 +21,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Extended Berkeley Packet Filter (eBPF)](docs/ebpf-basics.md)
 
+- [GNU Debugger (GDB) Reference](docs/gdb-cheatsheet.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

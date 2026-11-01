@@ -159,5 +159,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Chaitin-Briggs Graph Coloring Register Allocation](docs/register-allocation-graph-coloring.md)
 
+- [Lexical Analysis: NFAs to DFAs (Thompson & Subset)](docs/lexical-analysis-dfa-nfa.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

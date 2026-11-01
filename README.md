@@ -67,5 +67,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [File Descriptor Limits (ulimit & sysctl)](docs/linux-file-descriptors-limits.md)
 
+- [systemd journald Logging Architecture](docs/systemd-journald-logging.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

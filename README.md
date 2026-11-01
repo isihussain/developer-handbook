@@ -133,5 +133,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Database Sharding Architectures](docs/database-sharding-patterns.md)
 
+- [Two-Phase Commit Protocol (2PC)](docs/distributed-transactions-2pc.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

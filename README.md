@@ -33,5 +33,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [JSON Web Tokens (JWT)](docs/jwt-tokens.md)
 
+- [OAuth 2.0 & OIDC Authorization](docs/oauth2-grant-types.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

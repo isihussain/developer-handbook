@@ -119,5 +119,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [PostgreSQL MVCC & Autovacuum Tuning](docs/postgresql-vacuum-mvcc.md)
 
+- [PostgreSQL Declarative Table Partitioning](docs/postgresql-partitioning-declarative.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

@@ -131,5 +131,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Vector Embeddings & HNSW Graph Indexing](docs/vector-embeddings-hnsw-indexing.md)
 
+- [Database Sharding Architectures](docs/database-sharding-patterns.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

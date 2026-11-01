@@ -167,5 +167,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Just-In-Time (JIT) Tracing & Deoptimization](docs/jit-compilation-tracing.md)
 
+- [ELF Dynamic Linking: PLT and GOT](docs/dynamic-linker-elf-plt-got.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

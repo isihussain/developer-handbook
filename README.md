@@ -107,5 +107,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Argon2id & Bcrypt Password Hashing](docs/bcrypt-argon2-password-hashing.md)
 
+- [HMAC-SHA512 Webhook & API Request Signing](docs/hmac-sha512-api-signing.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

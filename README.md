@@ -137,5 +137,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Command Query Responsibility Segregation (CQRS)](docs/event-driven-cqrs-architecture.md)
 
+- [Apache Kafka Partitioning & Consumer Groups](docs/kafka-partitions-consumer-groups.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

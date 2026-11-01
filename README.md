@@ -185,5 +185,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Helm v3 Package Management & Go Templating](docs/helm-charts-templating.md)
 
+- [Terraform State Management & Remote Backends](docs/terraform-state-management.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

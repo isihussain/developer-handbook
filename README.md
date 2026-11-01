@@ -53,5 +53,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Compiler AST Lowering & IR Generation](docs/compiler-ast-lowering.md)
 
+- [LLVM Intermediate Representation (IR)](docs/llvm-ir-fundamentals.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

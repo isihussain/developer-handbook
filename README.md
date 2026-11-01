@@ -75,5 +75,7 @@ A collection of developer references, architectural patterns, and practical guid
 
 - [Linux Secure Computing Mode (seccomp)](docs/linux-seccomp-bpf-filters.md)
 
+- [TCP SYN Flood & SYN Cookies (net.ipv4.tcp_syncookies)](docs/tcp-syn-flood-syncookies.md)
+
 ## Contributing
 Pull requests, issues, and discussions are welcome.

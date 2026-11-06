@@ -1,6 +1,6 @@
 # Developer Handbook 📘
 
-[![Cheat Sheets](https://img.shields.io/badge/Cheat%20Sheets-200-blue?style=flat-square)](docs/)
+[![Cheat Sheets](https://img.shields.io/badge/Cheat%20Sheets-232-blue?style=flat-square)](docs/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 [![Galaxy Brain](https://img.shields.io/badge/Galaxy%20Brain-Gold%20x4-gold?style=flat-square)](https://github.com/isihussain?tab=achievements)
 
@@ -66,7 +66,7 @@ Curated architectural references, cheat sheets, and systems engineering guides s
 - [SWIM Protocol & Distributed Failure Detection](docs/gossip-protocol-swim.md)
 - [Two-Phase Commit Protocol (2PC)](docs/distributed-transactions-2pc.md)
 
-### Networking, Transport & Routing (25)
+### Networking, Transport & Routing (26)
 
 - [ARP Spoofing & Dynamic ARP Inspection (DAI)](docs/arp-spoofing-mitigation.md)
 - [BBR Congestion Control (Bottleneck Bandwidth and RTT)](docs/tcp-bbr-congestion-control.md)
@@ -92,6 +92,7 @@ Curated architectural references, cheat sheets, and systems engineering guides s
 - [TCP/IP Protocol Suite](docs/tcp-ip-fundamentals.md)
 - [WebSocket RFC 6455 Protocol](docs/websocket-protocol.md)
 - [WireGuard Cryptography: Noise_IKpsk2 Handshake](docs/wireguard-noise-ik-handshake.md)
+- [WireGuard Cryptokey Routing & Protocol Architecture](docs/wireguard-cryptokey-routing-protocol.md)
 - [WireGuard Protocol & Cryptokey Routing](docs/wireguard-vpn-cryptography.md)
 
 ### Compilers, Atomics & Memory Models (18)
@@ -138,7 +139,44 @@ Curated architectural references, cheat sheets, and systems engineering guides s
 - [SQL Injection Prevention & Parameterization](docs/sql-injection-mitigation.md)
 - [Write-Ahead Logging (WAL) & ARIES Recovery Protocol](docs/wal-write-ahead-logging-fsync.md)
 
-### Cryptography & Security (23)
+### Zero-Knowledge Systems & Advanced Cryptography (34)
+
+- [BLS12-381 & BN254 Elliptic Curve Pairings](docs/elliptic-curve-pairings-bls12381.md)
+- [CKKS & BFV Fully Homomorphic Encryption (FHE)](docs/fully-homomorphic-encryption-ckks.md)
+- [Chaumian Blind Signatures & Cryptographic e-Cash](docs/chaumian-blind-signatures-ecash.md)
+- [Confidential Computing: AMD SEV-SNP & Intel TDX](docs/confidential-computing-enclaves-sev.md)
+- [Constant-Time Cryptographic Implementations](docs/constant-time-cryptographic-implementations.md)
+- [Differential Power Analysis (DPA) & Masking Schemes](docs/side-channel-power-dpa-countermeasures.md)
+- [Differential Privacy & Laplace Noise Calibration](docs/differential-privacy-laplace-mechanism.md)
+- [Double Ratchet Protocol (Signal Protocol)](docs/double-ratchet-signal-protocol.md)
+- [FROST: Flexible Round-Optimized Schnorr Threshold Signatures](docs/threshold-signatures-frost-protocol.md)
+- [Groth16 Zero-Knowledge SNARK Proof System](docs/zero-knowledge-snarks-groth16.md)
+- [Groth16 zk-SNARK Protocol Synthesis](docs/groth16-zero-knowledge-synthesis.md)
+- [Hardware Security Modules (HSM) & PKCS#11 Architecture](docs/hardware-security-modules-pkcs11.md)
+- [Inner Product Arguments & Bulletproofs](docs/inner-product-arguments-bulletproofs.md)
+- [KZG (Kate-Zaverucha-Goldberg) Polynomial Commitments](docs/kzg-polynomial-commitments.md)
+- [Lattice Cryptography & Learning With Errors (LWE)](docs/lattice-cryptography-learning-with-errors.md)
+- [Merkle Mountain Ranges (MMR) & Accumulators](docs/merkle-mountain-ranges-vector-commitments.md)
+- [NIST FIPS 203 ML-KEM (Kyber) Lattice Key Encapsulation](docs/post-quantum-kyber-ml-kem.md)
+- [NIST FIPS 204 ML-DSA (Dilithium) Lattice Signatures](docs/post-quantum-dilithium-ml-dsa.md)
+- [NIST FIPS 205 SLH-DSA (SPHINCS+) Stateless Hash Signatures](docs/post-quantum-sphincs-plus-slh-dsa.md)
+- [Path ORAM (Oblivious RAM) Architecture](docs/oblivious-ram-path-oram.md)
+- [Pedersen Verifiable Secret Sharing (VSS)](docs/pedersen-verifiable-secret-sharing.md)
+- [RFC 8439 ChaCha20-Poly1305 AEAD Architecture](docs/chacha20-poly1305-aead-construction.md)
+- [Recursive SNARKs & Nova Incrementally Verifiable Computation](docs/recursive-snark-folding-halo2-nova.md)
+- [Ring Signatures & Confidential Transactions (RingCT)](docs/ring-signatures-confidential-transactions.md)
+- [SPDZ Secure Multi-Party Computation (MPC)](docs/secure-multi-party-computation-spdz.md)
+- [TPM 2.0 Measured Boot & Remote Attestation](docs/tpm2-measured-boot-remote-attestation.md)
+- [Verifiable Delay Functions (VDF)](docs/verifiable-delay-functions-wesolowski.md)
+- [Verifiable Delay Functions (VDF) Architecture](docs/verifiable-delay-functions-vdf.md)
+- [Verifiable Random Functions (VRF)](docs/verifiable-random-functions-ecvrf.md)
+- [Zero-Knowledge Bulletproofs Range Proofs](docs/zero-knowledge-bulletproofs.md)
+- [zk-Rollups & Data Availability Architectures](docs/zk-rollup-data-availability-validium.md)
+- [zk-SNARKs & Plonk Arithmetization Architecture](docs/zk-snarks-plonk-arithmetization.md)
+- [zk-STARKs & Fast Reed-Solomon IOP of Proximity (FRI)](docs/zk-starks-fri-proof-protocol.md)
+- [zkEVM State Transition Circuit Architecture](docs/zkevm-state-transition-circuit-design.md)
+
+### Cryptography & Security (20)
 
 - [AES-256-GCM Authenticated Encryption](docs/aes-gcm-authenticated-encryption.md)
 - [Argon2id & Bcrypt Password Hashing](docs/bcrypt-argon2-password-hashing.md)
@@ -146,7 +184,6 @@ Curated architectural references, cheat sheets, and systems engineering guides s
 - [Cross-Origin Resource Sharing (CORS)](docs/cors-configuration.md)
 - [Cryptographic Hash Functions](docs/crypto-hash-functions.md)
 - [Diffie-Hellman Key Exchange (ECDH)](docs/diffie-hellman-key-exchange.md)
-- [Groth16 Zero-Knowledge SNARK Proof System](docs/zero-knowledge-snarks-groth16.md)
 - [HMAC-SHA512 Webhook & API Request Signing](docs/hmac-sha512-api-signing.md)
 - [JSON Web Tokens (JWT)](docs/jwt-tokens.md)
 - [NIST FIPS 203 ML-KEM (Module-Lattice KEM)](docs/post-quantum-cryptography-ml-kem.md)
@@ -161,8 +198,6 @@ Curated architectural references, cheat sheets, and systems engineering guides s
 - [Time-Based One-Time Password (TOTP RFC 6238)](docs/totp-2fa-rfc6238.md)
 - [Web Security Headers](docs/security-headers.md)
 - [X.509 Certificate Chains & Public Key Infrastructure](docs/tls-certificate-chains-pki.md)
-- [Zero-Knowledge Bulletproofs Range Proofs](docs/zero-knowledge-bulletproofs.md)
-- [Zero-Knowledge Proofs (ZK-SNARKs & ZK-STARKs)](docs/zero-knowledge-proofs-intro.md)
 
 ### DevOps, Containers & SRE (16)
 
@@ -227,7 +262,7 @@ Curated architectural references, cheat sheets, and systems engineering guides s
 - [Vector Clocks & Causal Ordering](docs/vector-clocks-versioning.md)
 - [Vector Clocks & Distributed Causal Ordering](docs/vector-clocks-causal-ordering.md)
 - [Vector Embeddings & HNSW Graph Indexing](docs/vector-embeddings-hnsw-indexing.md)
-- [Verifiable Delay Functions (VDF) Architecture](docs/verifiable-delay-functions-vdf.md)
+- [Zero-Knowledge Proofs (ZK-SNARKs & ZK-STARKs)](docs/zero-knowledge-proofs-intro.md)
 - [cURL Command Reference](docs/curl-cheatsheet.md)
 - [eBPF Express Data Path (XDP) Architecture](docs/ebpf-xdp-high-speed-packet-filtering.md)
 - [gRPC & Protocol Buffers v3](docs/grpc-protocol-buffers.md)

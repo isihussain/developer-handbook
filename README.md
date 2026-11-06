@@ -1,203 +1,208 @@
 # Developer Handbook 📘
 
-A collection of developer references, architectural patterns, and practical guides for software engineering.
+[![Cheat Sheets](https://img.shields.io/badge/Cheat%20Sheets-168-blue?style=flat-square)](docs/)
+[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
+[![Galaxy Brain](https://img.shields.io/badge/Galaxy%20Brain-Gold%20x4-gold?style=flat-square)](https://github.com/isihussain?tab=achievements)
 
-## Contents
-- [Git Workflows](docs/git-workflow.md)
-- [Docker Quick Reference](docs/docker-guide.md)
-- [API Design Guidelines](docs/api-guidelines.md)
+Curated architectural references, cheat sheets, and systems engineering guides spanning operating systems internals, distributed consensus, compilers, network protocols, and cryptographic algorithms.
 
-- [TCP/IP Protocol Suite](docs/tcp-ip-fundamentals.md)
+---
 
-- [DNS Record Types & Resolution](docs/dns-record-types.md)
+## Table of Contents
 
-- [TLS 1.3 Cryptographic Handshake](docs/tls-ssl-handshake.md)
+### Systems Architecture & Linux Internals (24)
 
-- [Subnetting and CIDR Notation](docs/subnets-cidr-notation.md)
-
-- [Linux Process Signals](docs/linux-signals.md)
-
+- [Direct Memory Access (DMA) & Bounce Buffers](docs/dma-direct-memory-access-bounce-buffers.md)
+- [File Descriptor Limits (ulimit & sysctl)](docs/linux-file-descriptors-limits.md)
+- [Linux Capabilities (cap_net_bind_service)](docs/linux-capabilities-privileges.md)
+- [Linux Cgroups v2 CPU Throttling](docs/linux-cgroups-cpu-throttling.md)
+- [Linux Core Dump Configuration & GDB](docs/linux-core-dumps-gdb.md)
+- [Linux File Permissions](docs/linux-permissions.md)
+- [Linux Kernel SLUB Allocator Architecture](docs/kernel-memory-slub-allocator.md)
+- [Linux Kernel sched_ext Extensible eBPF Scheduler](docs/linux-sched-ext-bpf-scheduler.md)
+- [Linux Landlock LSM Sandboxing (Kernel 5.13+)](docs/linux-landlock-sandboxing.md)
 - [Linux Namespaces and Cgroups v2](docs/linux-namespaces-cgroups.md)
+- [Linux Network Namespaces & Virtual Ethernet (veth) Pairs](docs/linux-namespaces-network-isolation.md)
+- [Linux Page Cache Writeback Architecture](docs/linux-page-cache-dirty-ratio.md)
+- [Linux Process Signals](docs/linux-signals.md)
+- [Linux Secure Computing Mode (seccomp)](docs/linux-seccomp-bpf-filters.md)
+- [Linux Security Hardening (CIS Benchmark)](docs/linux-hardening-benchmarks.md)
+- [Linux TCP CUBIC Congestion Control Architecture](docs/linux-tcp-congestion-control-cubic.md)
+- [Linux Transparent Hugepages (THP)](docs/linux-hugepages-memory.md)
+- [Linux cgroup v2 Memory Controller & OOM Scoring](docs/cgroup-v2-memory-protection.md)
+- [Linux io_uring High-Performance Asynchronous Architecture](docs/linux-io-uring-async.md)
+- [Linux nftables Architecture & Bytecode Evaluation](docs/linux-nf-tables-firewall-bytecode.md)
+- [Linux perf & Hardware PMU Counter Profiling](docs/linux-perf-hardware-counter-sampling.md)
+- [Linux seccomp User Notification Filters](docs/seccomp-user-notification-filter.md)
+- [Virtual Memory & Memory-Mapped I/O (mmap)](docs/linux-virtual-memory-mmap.md)
+- [systemd Resource Control Directives & Limits](docs/systemd-cgroup-resource-controllers.md)
 
-- [Extended Berkeley Packet Filter (eBPF)](docs/ebpf-basics.md)
-
-- [GNU Debugger (GDB) Reference](docs/gdb-cheatsheet.md)
-
-- [Valgrind Memcheck & Memory Profiling](docs/valgrind-memcheck.md)
-
-- [strace System Call Tracing](docs/strace-system-calls.md)
-
-- [Cryptographic Hash Functions](docs/crypto-hash-functions.md)
-
-- [Asymmetric Key Cryptography](docs/asymmetric-cryptography.md)
-
-- [JSON Web Tokens (JWT)](docs/jwt-tokens.md)
-
-- [OAuth 2.0 & OIDC Authorization](docs/oauth2-grant-types.md)
-
-- [Cross-Origin Resource Sharing (CORS)](docs/cors-configuration.md)
-
-- [SQL Indexing & Query Optimization](docs/sql-indexing-strategies.md)
-
-- [Database ACID Transaction Properties](docs/database-acid-properties.md)
-
-- [Raft Consensus Algorithm](docs/raft-consensus-algorithm.md)
-
-- [Paxos Distributed Consensus Protocol](docs/paxos-distributed-consensus-protocol.md)
+### Distributed Systems & Consensus (14)
 
 - [CAP Theorem & PACELC Distributed Systems](docs/cap-theorem.md)
-
-- [RESTful API Architecture](docs/rest-api-best-practices.md)
-
-- [gRPC & Protocol Buffers v3](docs/grpc-protocol-buffers.md)
-
-- [WebSocket RFC 6455 Protocol](docs/websocket-protocol.md)
-
-- [Compiler AST Lowering & IR Generation](docs/compiler-ast-lowering.md)
-
-- [LLVM Intermediate Representation (IR)](docs/llvm-ir-fundamentals.md)
-
-- [Linux Cgroups v2 CPU Throttling](docs/linux-cgroups-cpu-throttling.md)
-
-- [Linux Transparent Hugepages (THP)](docs/linux-hugepages-memory.md)
-
-- [Virtual Memory & Memory-Mapped I/O (mmap)](docs/linux-virtual-memory-mmap.md)
-
-- [POSIX Shared Memory (shm_open)](docs/posix-shared-memory-shm.md)
-
-- [Linux io_uring Asynchronous I/O](docs/linux-io-uring-async.md)
-
-- [File Descriptor Limits (ulimit & sysctl)](docs/linux-file-descriptors-limits.md)
-
-- [systemd journald Logging Architecture](docs/systemd-journald-logging.md)
-
-- [Linux Core Dump Configuration & GDB](docs/linux-core-dumps-gdb.md)
-
-- [Linux Capabilities (cap_net_bind_service)](docs/linux-capabilities-privileges.md)
-
-- [Linux Secure Computing Mode (seccomp)](docs/linux-seccomp-bpf-filters.md)
-
-- [TCP SYN Flood & SYN Cookies (net.ipv4.tcp_syncookies)](docs/tcp-syn-flood-syncookies.md)
-
-- [BBR Congestion Control (Bottleneck Bandwidth and RTT)](docs/tcp-bbr-congestion-control.md)
-
-- [QUIC & HTTP/3 Transport Protocol](docs/quic-http3-protocol.md)
-
-- [DNSSEC Cryptographic Validation](docs/dnssec-validation.md)
-
-- [Border Gateway Protocol (BGP) Routing](docs/bgp-routing-fundamentals.md)
-
-- [IP Multicast & IGMP Protocols](docs/ip-multicast-igmp.md)
-
-- [WireGuard Protocol & Cryptokey Routing](docs/wireguard-vpn-cryptography.md)
-
-- [Path MTU Discovery & TCP MSS Clamping](docs/mtu-mss-path-discovery.md)
-
-- [ARP Spoofing & Dynamic ARP Inspection (DAI)](docs/arp-spoofing-mitigation.md)
-
-- [NAT Traversal: STUN, TURN, and ICE](docs/nat-traversal-stun-turn-ice.md)
-
-- [AES-256-GCM Authenticated Encryption](docs/aes-gcm-authenticated-encryption.md)
-
-- [Diffie-Hellman Key Exchange (ECDH)](docs/diffie-hellman-key-exchange.md)
-
-- [X.509 Certificate Chains & Public Key Infrastructure](docs/tls-certificate-chains-pki.md)
-
-- [Zero-Knowledge Proofs (ZK-SNARKs & ZK-STARKs)](docs/zero-knowledge-proofs-intro.md)
-
-- [Time-Based One-Time Password (TOTP RFC 6238)](docs/totp-2fa-rfc6238.md)
-
-- [Argon2id & Bcrypt Password Hashing](docs/bcrypt-argon2-password-hashing.md)
-
-- [HMAC-SHA512 Webhook & API Request Signing](docs/hmac-sha512-api-signing.md)
-
-- [SAML 2.0 Single Sign-On (SSO)](docs/saml-sso-architecture.md)
-
-- [SSH Certificate Authority Architecture](docs/ssh-certificates-ca.md)
-
-- [SQL Injection Prevention & Parameterization](docs/sql-injection-mitigation.md)
-
-- [PostgreSQL Write-Ahead Logging (WAL) & Streaming](docs/postgresql-wal-replication.md)
-
-- [PostgreSQL MVCC & Autovacuum Tuning](docs/postgresql-vacuum-mvcc.md)
-
-- [PostgreSQL Declarative Table Partitioning](docs/postgresql-partitioning-declarative.md)
-
-- [Redis Sentinel Failover & Monitoring](docs/redis-sentinel-high-availability.md)
-
-- [Redis Cluster & Hash Slot Sharding](docs/redis-cluster-hash-slots.md)
-
+- [Chandy-Lamport Distributed Snapshot Algorithm](docs/chandy-lamport-distributed-snapshots.md)
+- [Consistent Hashing & Distributed Hash Tables](docs/consistent-hashing-dht.md)
+- [Consistent Hashing with Bounded Loads](docs/consistent-hashing-bounded-loads.md)
+- [Distributed Deadlock Detection & Edge Chasing](docs/distributed-deadlock-detection-wait-for-graph.md)
 - [Distributed Locking with Redlock Algorithm](docs/distributed-locking-redlock.md)
-
-- [Log-Structured Merge-Trees (LSM) vs B-Trees](docs/lsm-trees-vs-b-trees.md)
-
-- [Vector Embeddings & HNSW Graph Indexing](docs/vector-embeddings-hnsw-indexing.md)
-
-- [Database Sharding Architectures](docs/database-sharding-patterns.md)
-
+- [Epidemic Gossip Protocols & SWIM Failure Detection](docs/gossip-protocol-epidemic-dissemination.md)
+- [OpenTelemetry Distributed Tracing](docs/distributed-tracing-opentelemetry.md)
+- [Paxos Distributed Consensus Protocol](docs/paxos-distributed-consensus-protocol.md)
+- [Practical Byzantine Fault Tolerance (PBFT)](docs/byzantine-fault-tolerance-pbft.md)
+- [Raft Consensus: Pre-Vote Protocol Extension](docs/raft-pre-vote-protocol-extension.md)
+- [Raft Distributed Consensus Protocol](docs/raft-consensus-algorithm.md)
+- [SWIM Protocol & Distributed Failure Detection](docs/gossip-protocol-swim.md)
 - [Two-Phase Commit Protocol (2PC)](docs/distributed-transactions-2pc.md)
 
-- [Command Query Responsibility Segregation (CQRS)](docs/event-driven-cqrs-architecture.md)
+### Networking, Transport & Routing (21)
 
-- [Apache Kafka Partitioning & Consumer Groups](docs/kafka-partitions-consumer-groups.md)
+- [ARP Spoofing & Dynamic ARP Inspection (DAI)](docs/arp-spoofing-mitigation.md)
+- [BBR Congestion Control (Bottleneck Bandwidth and RTT)](docs/tcp-bbr-congestion-control.md)
+- [BGP EVPN & VXLAN Data Center Overlay Architecture](docs/bgp-evpn-vxlan-overlay-networks.md)
+- [Border Gateway Protocol (BGP) Routing](docs/bgp-routing-fundamentals.md)
+- [DNS Record Types & Resolution](docs/dns-record-types.md)
+- [DNS over HTTPS (DoH RFC 8484) Architecture](docs/dns-over-https-doh-rfc8484.md)
+- [DNSSEC Cryptographic Validation](docs/dnssec-validation.md)
+- [Ed25519 Digital Signature Scheme (RFC 8032)](docs/cryptographic-signatures-ed25519.md)
+- [HTTP Status Codes](docs/http-status-codes.md)
+- [IPsec Architecture: IKEv2 & ESP Tunnel Mode](docs/ipsec-ikev2-tunnel-mode.md)
+- [NAT Traversal: STUN, TURN, and ICE](docs/nat-traversal-stun-turn-ice.md)
+- [Path MTU Discovery & TCP MSS Clamping](docs/mtu-mss-path-discovery.md)
+- [QUIC & HTTP/3 Transport Protocol](docs/quic-http3-protocol.md)
+- [QUIC RFC 9002 Loss Detection & Congestion Control](docs/quic-loss-detection-congestion.md)
+- [Subnetting and CIDR Notation](docs/subnets-cidr-notation.md)
+- [TCP SYN Flood & SYN Cookies (net.ipv4.tcp_syncookies)](docs/tcp-syn-flood-syncookies.md)
+- [TCP Sliding Window & Window Scale Option (RFC 7323)](docs/tcp-window-scaling-flow-control.md)
+- [TCP/IP Protocol Suite](docs/tcp-ip-fundamentals.md)
+- [WebSocket RFC 6455 Protocol](docs/websocket-protocol.md)
+- [WireGuard Cryptography: Noise_IKpsk2 Handshake](docs/wireguard-noise-ik-handshake.md)
+- [WireGuard Protocol & Cryptokey Routing](docs/wireguard-vpn-cryptography.md)
 
-- [RabbitMQ Exchange Routing Patterns](docs/rabbitmq-exchange-routing.md)
+### Compilers, Atomics & Memory Models (17)
 
-- [Bloom Filters & Count-Min Sketches](docs/bloom-filters-probabilistic.md)
-
-- [Consistent Hashing & Distributed Hash Tables](docs/consistent-hashing-dht.md)
-
-- [SWIM Protocol & Distributed Failure Detection](docs/gossip-protocol-swim.md)
-
-- [Vector Clocks & Causal Ordering](docs/vector-clocks-versioning.md)
-
-- [Circuit Breaker Pattern in Microservices](docs/circuit-breaker-resilience.md)
-
-- [Token Bucket & Leaky Bucket Rate Limiting](docs/rate-limiting-token-bucket.md)
-
-- [OpenTelemetry Distributed Tracing](docs/distributed-tracing-opentelemetry.md)
-
+- [AVX-512 Vectorization Architecture](docs/simd-avx-512-vectorization.md)
+- [C++20 Memory Model and Atomics Reference](docs/cpp20-memory-model-sequential-consistency.md)
+- [CPU Branch Prediction & Inter-Processor TLB Shootdowns](docs/branch-prediction-tlb-shootdowns.md)
+- [Chaitin-Briggs Graph Coloring Register Allocation](docs/register-allocation-graph-coloring.md)
+- [Compiler AST Lowering & IR Generation](docs/compiler-ast-lowering.md)
+- [Coroutine Internals: Stackful vs Stackless Models](docs/coroutine-internals-stackful-vs-stackless.md)
+- [Epoch-Based Reclamation (EBR) Architecture](docs/epoch-based-reclamation-ebr.md)
+- [Hardware Memory Models: Acquire-Release Semantics](docs/memory-ordering-acquire-release.md)
+- [LLVM Intermediate Representation (IR)](docs/llvm-ir-fundamentals.md)
+- [LMAX Disruptor High-Throughput Ring Buffer](docs/disruptor-ring-buffer-architecture.md)
+- [Lexical Analysis: NFAs to DFAs (Thompson & Subset)](docs/lexical-analysis-dfa-nfa.md)
+- [Lock-Free Data Structures & Compare-And-Swap (CAS)](docs/lock-free-atomic-cas.md)
+- [Lock-Free Memory Reclamation: Hazard Pointers](docs/memory-reclamation-hazard-pointers.md)
+- [Michael & Scott Lock-Free Queue Algorithm](docs/lock-free-queue-michael-scott.md)
+- [Parsing Algorithms: LL(k), LR(k), and LALR(1)](docs/parser-lalr-vs-llk.md)
+- [SIMD Parallelism: AVX2 and ARM NEON](docs/simd-vectorization-avx2.md)
 - [Static Single Assignment (SSA) Form](docs/compiler-intermediate-representation-ssa.md)
 
-- [Chaitin-Briggs Graph Coloring Register Allocation](docs/register-allocation-graph-coloring.md)
+### Databases & Storage Engines (18)
 
-- [Lexical Analysis: NFAs to DFAs (Thompson & Subset)](docs/lexical-analysis-dfa-nfa.md)
+- [Advanced Probabilistic Filters: Counting & Cuckoo Filters](docs/bloom-filters-counting-and-cuckoo.md)
+- [Apache Parquet Columnar Storage Encodings](docs/columnar-storage-parquet-encodings.md)
+- [B-Tree vs B+ Tree Storage Engine Architecture](docs/b-tree-vs-b-plus-tree-internal-nodes.md)
+- [Bloom Filters & Count-Min Sketches](docs/bloom-filters-probabilistic.md)
+- [Database ACID Transaction Properties](docs/database-acid-properties.md)
+- [Database Sharding Architectures](docs/database-sharding-patterns.md)
+- [HyperLogLog (HLL) Cardinality Estimation](docs/hyperloglog-cardinality-estimation.md)
+- [Log-Structured Merge-Trees (LSM) vs B-Trees](docs/lsm-trees-vs-b-trees.md)
+- [PostgreSQL Core Operations](docs/postgresql-basics.md)
+- [PostgreSQL Declarative Table Partitioning](docs/postgresql-partitioning-declarative.md)
+- [PostgreSQL MVCC & Autovacuum Tuning](docs/postgresql-vacuum-mvcc.md)
+- [PostgreSQL Write-Ahead Logging (WAL) & Streaming](docs/postgresql-wal-replication.md)
+- [Redis Cluster & Hash Slot Sharding](docs/redis-cluster-hash-slots.md)
+- [Redis In-Memory Store](docs/redis-commands.md)
+- [Redis Sentinel Failover & Monitoring](docs/redis-sentinel-high-availability.md)
+- [SQL Indexing & Query Optimization](docs/sql-indexing-strategies.md)
+- [SQL Injection Prevention & Parameterization](docs/sql-injection-mitigation.md)
+- [Write-Ahead Logging (WAL) & ARIES Recovery Protocol](docs/wal-write-ahead-logging-fsync.md)
 
-- [Parsing Algorithms: LL(k), LR(k), and LALR(1)](docs/parser-lalr-vs-llk.md)
+### Cryptography & Security (20)
 
-- [Garbage Collection: Mark-and-Sweep & Tri-Color](docs/garbage-collection-mark-sweep.md)
+- [AES-256-GCM Authenticated Encryption](docs/aes-gcm-authenticated-encryption.md)
+- [Argon2id & Bcrypt Password Hashing](docs/bcrypt-argon2-password-hashing.md)
+- [Asymmetric Key Cryptography](docs/asymmetric-cryptography.md)
+- [Cross-Origin Resource Sharing (CORS)](docs/cors-configuration.md)
+- [Cryptographic Hash Functions](docs/crypto-hash-functions.md)
+- [Diffie-Hellman Key Exchange (ECDH)](docs/diffie-hellman-key-exchange.md)
+- [Groth16 Zero-Knowledge SNARK Proof System](docs/zero-knowledge-snarks-groth16.md)
+- [HMAC-SHA512 Webhook & API Request Signing](docs/hmac-sha512-api-signing.md)
+- [JSON Web Tokens (JWT)](docs/jwt-tokens.md)
+- [NIST FIPS 203 ML-KEM (Module-Lattice KEM)](docs/post-quantum-cryptography-ml-kem.md)
+- [NIST FIPS 204 ML-DSA (Module-Lattice Digital Signatures)](docs/post-quantum-cryptography-ml-dsa.md)
+- [OAuth 2.0 & OIDC Authorization](docs/oauth2-grant-types.md)
+- [SSH Certificate Authority Architecture](docs/ssh-certificates-ca.md)
+- [SSH Key Management](docs/ssh-keys.md)
+- [TLS 1.3 0-RTT Early Data Resumption (RFC 8446)](docs/tls-1-3-0-rtt-resumption.md)
+- [TLS 1.3 Cryptographic Handshake](docs/tls-ssl-handshake.md)
+- [Time-Based One-Time Password (TOTP RFC 6238)](docs/totp-2fa-rfc6238.md)
+- [Web Security Headers](docs/security-headers.md)
+- [X.509 Certificate Chains & Public Key Infrastructure](docs/tls-certificate-chains-pki.md)
+- [Zero-Knowledge Proofs (ZK-SNARKs & ZK-STARKs)](docs/zero-knowledge-proofs-intro.md)
 
-- [Just-In-Time (JIT) Tracing & Deoptimization](docs/jit-compilation-tracing.md)
+### DevOps, Containers & SRE (14)
 
-- [ELF Dynamic Linking: PLT and GOT](docs/dynamic-linker-elf-plt-got.md)
-
-- [SIMD Parallelism: AVX2 and ARM NEON](docs/simd-vectorization-avx2.md)
-
-- [Hardware Memory Models: Acquire-Release Semantics](docs/memory-ordering-acquire-release.md)
-
-- [Lock-Free Data Structures & Compare-And-Swap (CAS)](docs/lock-free-atomic-cas.md)
-
-- [C++20 Memory Model & Sequential Consistency](docs/cpp20-memory-model-sequential-consistency.md)
-
-- [Kubernetes Pod Lifecycle & Probes](docs/kubernetes-pod-lifecycle.md)
-
-- [Kubernetes Services & kube-proxy (iptables vs IPVS)](docs/kubernetes-services-kube-proxy.md)
-
-- [Kubernetes Ingress Controllers & Gateway API](docs/kubernetes-ingress-controllers.md)
-
+- [Differential Flame Graphs Profiling](docs/flamegraphs-differential-profiling.md)
+- [Docker Compose Services](docs/docker-compose.md)
 - [Docker Multi-Stage Build Optimization](docs/docker-multistage-builds.md)
-
-- [Helm v3 Package Management & Go Templating](docs/helm-charts-templating.md)
-
-- [Terraform State Management & Remote Backends](docs/terraform-state-management.md)
-
-- [PromQL Metrics & Alerting Engine](docs/prometheus-promql-metrics.md)
-
+- [Docker Quick Reference](docs/docker-guide.md)
 - [Grafana Declarative Dashboard Provisioning](docs/grafana-dashboard-provisioning.md)
+- [Helm v3 Package Management & Go Templating](docs/helm-charts-templating.md)
+- [Kubernetes Ingress Controllers & Gateway API](docs/kubernetes-ingress-controllers.md)
+- [Kubernetes Pod Lifecycle & Probes](docs/kubernetes-pod-lifecycle.md)
+- [Kubernetes Services & kube-proxy (iptables vs IPVS)](docs/kubernetes-services-kube-proxy.md)
+- [PromQL Metrics & Alerting Engine](docs/prometheus-promql-metrics.md)
+- [Systemd Service Units](docs/systemd-services.md)
+- [Terraform State Management & Remote Backends](docs/terraform-state-management.md)
+- [Valgrind Memcheck & Memory Profiling](docs/valgrind-memcheck.md)
+- [systemd journald Logging Architecture](docs/systemd-journald-logging.md)
 
+### Developer Tools & Essentials (40)
+
+- [Apache Kafka Partitioning & Consumer Groups](docs/kafka-partitions-consumer-groups.md)
+- [Circuit Breaker Pattern in Microservices](docs/circuit-breaker-resilience.md)
+- [Command Query Responsibility Segregation (CQRS)](docs/event-driven-cqrs-architecture.md)
+- [Cron Schedule Patterns](docs/cron-syntax.md)
+- [Defensive Bash Scripting](docs/bash-scripting.md)
+- [ELF Dynamic Linking: PLT and GOT](docs/dynamic-linker-elf-plt-got.md)
+- [Environment Variables Guide](docs/environment-variables.md)
+- [Extended Berkeley Packet Filter (eBPF)](docs/ebpf-basics.md)
+- [GNU Debugger (GDB) Reference](docs/gdb-cheatsheet.md)
+- [Garbage Collection: Mark-and-Sweep & Tri-Color](docs/garbage-collection-mark-sweep.md)
+- [Git Stash Cheat Sheet](docs/git-stash.md)
+- [Git Workflow Guidelines](docs/git-workflow.md)
 - [GitHub Actions Advanced Caching & Matrix Builds](docs/github-actions-caching-matrix.md)
+- [IP Multicast & IGMP Protocols](docs/ip-multicast-igmp.md)
+- [Interactive Git Rebase](docs/git-rebase.md)
+- [JDK ZGC: Colored Pointers & Load Barriers](docs/garbage-collection-zgc-colored-pointers.md)
+- [Just-In-Time (JIT) Tracing & Deoptimization](docs/jit-compilation-tracing.md)
+- [Linux epoll: Level-Triggered vs Edge-Triggered Semantics](docs/epoll-level-triggered-vs-edge-triggered.md)
+- [Log-Structured Merge (LSM) Trees Compaction Strategies](docs/log-structured-merge-trees-compaction.md)
+- [MESI CPU Cache Coherence Protocol](docs/cpu-cache-coherence-mesi-protocol.md)
+- [Makefile Build Recipes](docs/makefile-basics.md)
+- [Markdown Syntax Reference](docs/markdown-guide.md)
+- [Nginx Reverse Proxy](docs/nginx-reverse-proxy.md)
+- [POSIX Shared Memory (shm_open)](docs/posix-shared-memory-shm.md)
+- [RESTful API Architecture](docs/rest-api-best-practices.md)
+- [RabbitMQ Exchange Routing Patterns](docs/rabbitmq-exchange-routing.md)
+- [Regular Expressions](docs/regex-cheatsheet.md)
+- [SAML 2.0 Single Sign-On (SSO)](docs/saml-sso-architecture.md)
+- [Serializable Snapshot Isolation (SSI) Architecture](docs/multi-version-concurrency-control-ssi.md)
+- [Tar and Gzip Utilities](docs/tar-compression.md)
+- [Text Processing Essentials](docs/grep-awk-sed.md)
+- [Tmux Terminal Multiplexer](docs/tmux-shortcuts.md)
+- [Token Bucket & Leaky Bucket Rate Limiting](docs/rate-limiting-token-bucket.md)
+- [Vector Clocks & Causal Ordering](docs/vector-clocks-versioning.md)
+- [Vector Embeddings & HNSW Graph Indexing](docs/vector-embeddings-hnsw-indexing.md)
+- [cURL Command Reference](docs/curl-cheatsheet.md)
+- [eBPF Express Data Path (XDP) Architecture](docs/ebpf-xdp-high-speed-packet-filtering.md)
+- [gRPC & Protocol Buffers v3](docs/grpc-protocol-buffers.md)
+- [jq JSON Processor](docs/jq-guide.md)
+- [strace System Call Tracing](docs/strace-system-calls.md)
 
-- [Linux Security Hardening (CIS Benchmark)](docs/linux-hardening-benchmarks.md)
+---
 
 ## Contributing
-Pull requests, issues, and discussions are welcome.
+Refer to [CONTRIBUTING.md](CONTRIBUTING.md) and [SECURITY.md](SECURITY.md) for pull request protocols and coordinated disclosure.

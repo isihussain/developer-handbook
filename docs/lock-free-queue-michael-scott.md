@@ -1,21 +1,21 @@
-# Michael & Scott Lock-Free Queue Algorithm
+# Concurrency: Michael & Scott Lock-Free Queue Internals
 
-The Michael-Scott queue is a non-blocking FIFO data structure utilizing atomic Compare-And-Swap (CAS) instructions.
+The Michael & Scott lock-free queue uses linked lists with sentinel nodes, ensuring non-blocking concurrent enqueue and dequeue operations via Compare-And-Swap (CAS).
 
 ```mermaid
-graph LR
-    Head[Head Pointer] --> D[Dummy Sentinel Node]
-    D --> N1[Node 1]
-    N1 --> N2[Node 2]
-    Tail[Tail Pointer] --> N2
-    N2 --> NULL[nullptr]
+flowchart LR
+    subgraph Queue[Lock-Free Linked List]
+        Head[Head Pointer] --> S[Sentinel Node: Value dummy]
+        S --> N1[Node 1: Value A]
+        N1 --> N2[Node 2: Value B]
+        Tail[Tail Pointer] --> N2
+    end
 ```
 
 ---
 
-## 1. Invariants
+## 1. Enqueue Invariants
 
-- Queue always contains at least one node: the **Dummy Sentinel Node**.
-- Enqueue pushes to `Tail->next`, then advances `Tail`.
-- Dequeue advances `Head` and claims the payload of the subsequent node.
-- Concurrent enqueue threads assist lagging threads by swinging `Tail` forward if observed behind.
+1. **Tail Swing:** A thread reads `tail` and `tail->next`. If `tail->next == NULL`, it attempts `CAS(&tail->next, NULL, newNode)`.
+2. **Tail Advance:** After swinging the next pointer, the thread (or any helping thread that notices a lagging tail) executes `CAS(&tail, curTail, newNode)`.
+3. **ABA Mitigation:** Pointer tagging or Epoch-Based Reclamation (EBR) prevents ABA pointer reuse bugs during memory deallocation.

@@ -1,6 +1,6 @@
 # Developer Handbook 📘
 
-[![Cheat Sheets](https://img.shields.io/badge/Cheat%20Sheets-357-blue?style=flat-square)](docs/)
+[![Cheat Sheets](https://img.shields.io/badge/Cheat%20Sheets-384-blue?style=flat-square)](docs/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 [![Galaxy Brain](https://img.shields.io/badge/Galaxy%20Brain-Gold%20x4-gold?style=flat-square)](https://github.com/isihussain?tab=achievements)
 

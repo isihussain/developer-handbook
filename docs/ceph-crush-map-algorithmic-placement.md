@@ -1,18 +1,20 @@
-# Ceph: CRUSH Map Algorithmic Object Placement
+# Distributed Object Storage: Ceph CRUSH Map Placement Algorithm
 
-Ceph abandons centralized metadata lookups by calculating data placement deterministically using the CRUSH (Controlled Replication Under Scalable Hashing) algorithm.
+Ceph eliminates centralized metadata servers (lookup tables) for object placement by calculating storage node locations deterministically using CRUSH (Controlled Replication Under Scalable Hashing).
 
 ```mermaid
 flowchart TD
-    ObjID["Object ID: 'image-042'"] --> Hash["Hash: hash(ObjID) -> Placement Group (PG)"]
-    Hash --> CRUSH["CRUSH Algorithm: Inputs = PG, Cluster Map, Failure Rules"]
-    CRUSH --> OSDs["Target OSD List: [OSD 12, OSD 45, OSD 89]"]
+    ObjectID["Object: 'photo_992'"] --> Hash["Hash(ObjectID) = 0x8A72F1B0"]
+    Hash --> PG["Placement Group: PG_4.12"]
+    PG --> CRUSH["CRUSH Map Ruleset: (Fault Domain: Rack)"]
+    CRUSH --> OSD1["OSD 14 (Rack A)"]
+    CRUSH --> OSD2["OSD 28 (Rack B)"]
+    CRUSH --> OSD3["OSD 42 (Rack C)"]
 ```
 
 ---
 
-## 1. Core Principles
-
-1. **Algorithmic Lookups:** Clients compute the exact storage nodes (OSDs) storing a requested object using local CPU calculations, eliminating metadata server bottlenecks.
-2. **Failure Domain Isolation:** CRUSH rules place replica copies across separate failure boundaries (e.g., separate server racks, power supplies, or datacenters).
-3. **Minimal Data Migration:** When adding or removing cluster storage disks, CRUSH moves only the minimal fraction of data needed to rebalance the cluster ($1/N$).
+## 1. Hierarchical Cluster Map
+CRUSH maps model real-world topology:
+$$\text{Root} \rightarrow \text{Datacenter} \rightarrow \text{Row} \rightarrow \text{Rack} \rightarrow \text{Host} \rightarrow \text{OSD}$$
+Replicas are placed across isolated fault domains to survive rack/power failure.

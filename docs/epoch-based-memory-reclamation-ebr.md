@@ -1,20 +1,19 @@
-# Epoch-Based Reclamation (EBR) Lock-Free Architecture
+# Concurrency Internals: Epoch-Based Memory Reclamation (EBR)
 
-Epoch-Based Reclamation permits safe memory deallocation in lock-free concurrent data structures without hardware hazard pointers or garbage collection by tracking reader execution epochs.
+In lock-free data structures (crossbeam, jemalloc), threads cannot free nodes immediately because concurrent readers may still hold pointers. EBR tracks generational epochs.
 
 ```mermaid
 flowchart TD
-    GlobalEpoch[Global Epoch Counter: e mod 3] --> Thread1[Reader Thread 1: Active in Epoch 0]
-    GlobalEpoch --> Thread2[Reader Thread 2: Active in Epoch 0]
-    GlobalEpoch --> Writer[Writer Thread: Retires Node X in Epoch 0]
-    Writer --> RetireList[Append Node X to Retire List of Epoch 0]
-    Reclaim[Reclaimer Check: All threads advanced past Epoch 0?]
-    RetireList --> Reclaim
-    Reclaim -->|Yes: Safe to Free| FreeMemory[Deallocate Node X Memory]
+    GlobalEpoch[Global Epoch: e = 2] --> Thread1[Thread 1: Local Epoch = 2]
+    GlobalEpoch --> Thread2[Thread 2: Local Epoch = 2]
+    DeleteOp[Delete Node X] --> Retire[Retire Node X to Epoch 2 Trash List]
+    subgraph Reclamation
+        AllThreadsAdvance{All active threads reach Epoch >= 3?}
+        AllThreadsAdvance -->|Yes| FreeMemory["kfree(Node X): Safe! Zero concurrent readers exist!"]
+    end
 ```
 
 ---
 
-## 1. 3-Epoch Rotation Guarantee
-
-Memory retired in epoch $e$ can only be referenced by threads that entered the data structure in epoch $e$. Once all threads announce an active epoch of $e+1$ or higher, no thread holds references to epoch $e$ retire lists, making deallocation safe.
+## 1. Overhead
+EBR introduces near-zero overhead during active reads compared to atomic reference counting or Hazard Pointers.

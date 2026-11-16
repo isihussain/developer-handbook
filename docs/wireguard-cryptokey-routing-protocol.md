@@ -1,24 +1,17 @@
-# WireGuard Cryptokey Routing & Protocol Architecture
+# Network Tunneling: WireGuard Cryptokey Routing Protocol
 
-WireGuard instantiates the `Noise_IKpsk2_25519_ChaChaPoly_BLAKE2s` protocol framework, binding public keys directly to permitted IP tunnels inside the Linux network stack.
+WireGuard replaces complex IPsec/IKEv2 configurations with Cryptokey Routing: mapping public encryption keys directly to allowed IP addresses.
 
 ```mermaid
-sequenceDiagram
-    participant Initiator as Client (Static i_pk)
-    participant Responder as Server (Static r_pk)
-    Note over Initiator: Handshake Initiation (148 bytes)
-    Initiator->>Responder: msg1: ephemeral e_i, encrypted static i_pk, auth tag, timestamp
-    Note over Responder: Handshake Response (92 bytes)
-    Responder->>Initiator: msg2: ephemeral e_r, encrypted empty payload, auth tag
-    Note over Initiator,Responder: Derive symmetric keys via Blake2s KDF
-    Initiator->>Responder: Data Packet (Encrypted ChaCha20-Poly1305)
+flowchart TD
+    PacketIn[Outbound Packet: Dest IP 10.0.0.5] --> Table[Cryptokey Routing Table]
+    Table --> Match["Match IP 10.0.0.5 -> Peer Public Key: 'PubK_Alice'"]
+    Match --> Encrypt[Encrypt with ChaCha20-Poly1305 Symmetric Key]
+    Encrypt --> Transmit[Transmit UDP Packet to Peer Endpoint]
 ```
 
 ---
 
-## 1. Cryptokey Routing Table
-
-Instead of binding VPN sessions to stateful virtual interfaces:
-* The kernel matches destination IP against a routing table: `10.0.0.2/32 -> Peer Public Key PubK_A`.
-* Encrypts packet using symmetric key derived from `PubK_A`.
-* Enforces firewall rules strictly prior to packet ingress into the host network stack.
+## 1. 1-RTT Noise Protocol Handshake
+- Uses Noise IK handshake pattern (`Noise_IKpsk2_25519_ChaChaPoly_BLAKE2s`).
+- If no data is transmitted, the tunnel is completely silent (transmits zero packets, making endpoints invisible to port scans).

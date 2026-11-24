@@ -8,7 +8,7 @@ flowchart TD
     RowUpdate --> LiveTuple[New Row: xmin = current_tx, xmax = 0]
     DeadTuple --> AutoVacuum{Autovacuum Daemon}
     AutoVacuum --> Reclaim[Reclaims dead tuple space for future inserts]
-    AutoVacuum --> Freeze[Freeze Old xmin values to FrozenXID (2)]
+    AutoVacuum --> Freeze[Mark sufficiently old XIDs frozen]
 ```
 
 ---

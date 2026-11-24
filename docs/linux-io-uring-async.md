@@ -55,7 +55,7 @@ int ret = syscall(__NR_io_uring_enter, ring_fd, 8, 1, IORING_ENTER_GETEVENTS, NU
 
 ### `io_uring_register(fd, opcode, arg, nr_args)`
 Pre-registers memory buffers or file descriptors to bypass repeated per-I/O validation:
-- `IORING_REGISTER_BUFFERS`: Pre-pins physical memory pages, eliminating `get_user_pages()` translation overhead during disk/network DMA.
+- `IORING_REGISTER_BUFFERS`: Pins user pages and keeps their mappings available for fixed-buffer operations, reducing per-I/O buffer setup. Registration alone does not remove the data copy in ordinary read/write operations.
 - `IORING_REGISTER_FILES`: Pre-registers file descriptor tables, bypassing `fget()` atomic reference count increment and file table locking.
 
 ---
@@ -88,7 +88,7 @@ If `sqe[0]` fails, `sqe[1]` aborts with `-ECANCELED` without executing.
 | **Programming Paradigm** | Readiness notification (Socket ready for read/write) | Completion notification (Buffer already filled/transmitted) |
 | **System Call Count** | At least 2 syscalls per cycle (`epoll_wait` + `read`/`write`) | Batched 0 to 1 syscall for $N$ transfers |
 | **Storage (File) I/O** | Unsupported (`epoll` always reports ready for regular files) | Fully asynchronous for all file, socket, and pipe operations |
-| **Memory Transitions** | Userspace buffer copied into socket kernel buffer | Zero-copy buffer registration (`IORING_REGISTER_BUFFERS`) |
+| **Buffer setup and data copies** | Ordinary socket I/O copies payloads between user and kernel space | Registered buffers reduce per-I/O mapping setup; ordinary read/write still copies payloads |
 | **Thread Overhead** | Requires thread pool (`libuv`, `asio`) for blocking disk I/O | Pure kernel offloading with zero auxiliary worker threads |
 | **Kernel Concurrency** | Synchronous trap on every I/O call | Asynchronous queuing with `SQPOLL` background processing |
 
@@ -112,3 +112,9 @@ sqe->user_data = request_id;
 // Memory barrier ensures SQE is written before tail becomes visible to kernel
 __atomic_store_n(sq_ring.tail, tail + 1, __ATOMIC_RELEASE);
 ```
+
+---
+
+## References
+
+- [io_uring registered buffers (Linux man-pages)](https://man7.org/linux/man-pages/man7/io_uring_registered_buffers.7.html)

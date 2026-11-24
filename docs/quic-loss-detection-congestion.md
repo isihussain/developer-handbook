@@ -1,30 +1,26 @@
 # QUIC RFC 9002 Loss Detection & Congestion Control
 
-QUIC (RFC 9002) replaces TCP loss recovery by operating entirely over UDP with encrypted packet numbers and independent stream multiplexing.
+QUIC loss detection runs over UDP and uses packet numbers that are unique within a packet-number space. A lost STREAM frame can be sent again in a new packet; the packet number is not reused. This lets ACKs identify exactly which transmission they acknowledge.
 
 ```mermaid
 flowchart TD
-    Send[QUIC Packet Sent] --> Monotonic[Monotonic Increasing Packet Number]
-    Monotonic --> ACK{ACK Received?}
-    ACK -->|Acked| RTT[Sample RTT & Smooth SRTT]
-    ACK -->|Later packet acked| LossCheck{Packet Threshold >= 3 OR Time Threshold >= 9/8 RTT?}
-    LossCheck -->|Yes| DeclareLoss[Declare Packet Lost]
-    LossCheck -->|No| ArmTimer[Arm Loss Detection Timer]
-    DeclareLoss --> Retransmit[Retransmit Stream Frames in NEW Packet Number]
+    Sent[QUIC packet sent] --> Ack{Acknowledged?}
+    Ack -->|Yes| RTT[Update RTT estimates]
+    Ack -->|No; a later packet is acknowledged| Check{Packet or time threshold reached?}
+    Check -->|Yes| Lost[Declare packet lost]
+    Check -->|No| Timer[Arm loss-detection timer]
+    Lost --> Retransmit[Re-send needed frames in a new packet]
 ```
 
----
+## 1. Loss thresholds
 
-## 1. Monotonic Packet Numbers
+An endpoint can declare an outstanding packet lost after a later packet in the **same packet-number space** is acknowledged and either threshold is met:
 
-In QUIC:
-- Every packet receives a strictly monotonic, unique **Packet Number** ($N, N+1, N+2$).
-- Retransmitted payload frames are packed into a **new packet** with an incremented packet number.
-- ACKs explicitly cite the packet number, eliminating retransmission ambiguity.
+- **Packet threshold:** the acknowledged packet number is at least 3 greater than the outstanding packet's number.
+- **Time threshold:** the packet has been outstanding for at least `max(9/8 × max(latest_rtt, smoothed_rtt), timer_granularity)`. The recommended timer granularity is 1 ms.
 
----
+These are recommended initial values from RFC 9002, not a fixed universal timeout. Implementations may adjust the threshold to account for observed reordering. Acknowledgments of packets in one packet-number space do not trigger loss detection for another space.
 
-## 2. Thresholds
+## References
 
-- **Packet Threshold (`kPacketThreshold = 3`)**: Declared lost if a packet sent $\ge 3$ packets later is acked.
-- **Time Threshold (`kTimeThreshold = 9/8`)**: Declared lost if elapsed time exceeds $9/8 	imes \max(	ext{latest RTT}, 	ext{SRTT})$.
+- IETF, [RFC 9002: QUIC Loss Detection and Congestion Control, Section 6.1](https://datatracker.ietf.org/doc/html/rfc9002#section-6.1).

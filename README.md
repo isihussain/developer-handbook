@@ -1,6 +1,6 @@
 # Developer Handbook 📘
 
-[![Cheat Sheets](https://img.shields.io/badge/Cheat%20Sheets-718-blue?style=flat-square)](docs/)
+[![Cheat Sheets](https://img.shields.io/badge/Cheat%20Sheets-721-blue?style=flat-square)](docs/)
 [![Pull Shark](https://img.shields.io/badge/Pull%20Shark-Gold%20x4-gold?style=flat-square)](https://github.com/isihussain?tab=achievements)
 [![Galaxy Brain](https://img.shields.io/badge/Galaxy%20Brain-Gold%20x4-gold?style=flat-square)](https://github.com/isihussain?tab=achievements)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
@@ -452,7 +452,7 @@ Curated architectural references, cheat sheets, and systems engineering guides s
 - [Strace System Calls](docs/strace-system-calls.md)
 - [Systemd Cgroup Resource Controllers](docs/systemd-cgroup-resource-controllers.md)
 
-### Cryptography, Zero-Trust & Systems Security (43)
+### Cryptography, Zero-Trust & Systems Security (46)
 
 - [Acme Protocol Automated Tls Issuance](docs/acme-protocol-automated-tls-issuance.md)
 - [Arm64 Pointer Authentication Pac Bti](docs/arm64-pointer-authentication-pac-bti.md)
@@ -468,11 +468,13 @@ Curated architectural references, cheat sheets, and systems engineering guides s
 - [Crypto Verifiable Random Functions Vrf Ecvrf](docs/crypto-verifiable-random-functions-vrf-ecvrf.md)
 - [Cryptographic Signatures Ed25519](docs/cryptographic-signatures-ed25519.md)
 - [Deserialization Jndi Injection Roller Sap Netweaver](docs/deserialization-jndi-injection-roller-sap-netweaver.md)
+- [Drupal Installer Reinstall Fail Open Fail2install](docs/drupal-installer-reinstall-fail-open-fail2install.md)
 - [Fhe Lattice Cryptography Bgv Ckks](docs/fhe-lattice-cryptography-bgv-ckks.md)
 - [Hardcoded Credentials Cluster Trust Cisco Expressway](docs/hardcoded-credentials-cluster-trust-cisco-expressway.md)
 - [Hardware Security Modules Pkcs11](docs/hardware-security-modules-pkcs11.md)
 - [Jwt Tokens](docs/jwt-tokens.md)
 - [Lattice Cryptography Learning With Errors](docs/lattice-cryptography-learning-with-errors.md)
+- [Mitel Micollab Awv Vulnerability Chain Zero Day](docs/mitel-micollab-awv-vulnerability-chain-zero-day.md)
 - [Mtls Spiffe Spire Workload Identities](docs/mtls-spiffe-spire-workload-identities.md)
 - [Oauth 20 Pkce Code Challenge Verification](docs/oauth-20-pkce-code-challenge-verification.md)
 - [Oauth2 Grant Types](docs/oauth2-grant-types.md)
@@ -493,6 +495,7 @@ Curated architectural references, cheat sheets, and systems engineering guides s
 - [Tls Ssl Handshake](docs/tls-ssl-handshake.md)
 - [Tor Onion Routing Circuit Crypto](docs/tor-onion-routing-circuit-crypto.md)
 - [Vulnerability Prioritization Cisa Kev Bod 26 04](docs/vulnerability-prioritization-cisa-kev-bod-26-04.md)
+- [Vcenter Srp Auth Bypass Beyondtrust Armory Castle Chain](docs/vcenter-srp-auth-bypass-beyondtrust-armory-castle-chain.md)
 - [Webauthn Fido2 Passkey Cryptographic Handshake](docs/webauthn-fido2-passkey-cryptographic-handshake.md)
 - [Wireguard Cryptokey Routing Protocol](docs/wireguard-cryptokey-routing-protocol.md)
 - [Wireguard Vpn Cryptography](docs/wireguard-vpn-cryptography.md)

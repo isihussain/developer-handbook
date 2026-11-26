@@ -1,6 +1,6 @@
 # Developer Handbook 📘
 
-[![Cheat Sheets](https://img.shields.io/badge/Cheat%20Sheets-715-blue?style=flat-square)](docs/)
+[![Cheat Sheets](https://img.shields.io/badge/Cheat%20Sheets-718-blue?style=flat-square)](docs/)
 [![Pull Shark](https://img.shields.io/badge/Pull%20Shark-Gold%20x4-gold?style=flat-square)](https://github.com/isihussain?tab=achievements)
 [![Galaxy Brain](https://img.shields.io/badge/Galaxy%20Brain-Gold%20x4-gold?style=flat-square)](https://github.com/isihussain?tab=achievements)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
@@ -452,7 +452,7 @@ Curated architectural references, cheat sheets, and systems engineering guides s
 - [Strace System Calls](docs/strace-system-calls.md)
 - [Systemd Cgroup Resource Controllers](docs/systemd-cgroup-resource-controllers.md)
 
-### Cryptography, Zero-Trust & Systems Security (40)
+### Cryptography, Zero-Trust & Systems Security (43)
 
 - [Acme Protocol Automated Tls Issuance](docs/acme-protocol-automated-tls-issuance.md)
 - [Arm64 Pointer Authentication Pac Bti](docs/arm64-pointer-authentication-pac-bti.md)
@@ -467,7 +467,9 @@ Curated architectural references, cheat sheets, and systems engineering guides s
 - [Crypto Threshold Bls Signatures](docs/crypto-threshold-bls-signatures.md)
 - [Crypto Verifiable Random Functions Vrf Ecvrf](docs/crypto-verifiable-random-functions-vrf-ecvrf.md)
 - [Cryptographic Signatures Ed25519](docs/cryptographic-signatures-ed25519.md)
+- [Deserialization Jndi Injection Roller Sap Netweaver](docs/deserialization-jndi-injection-roller-sap-netweaver.md)
 - [Fhe Lattice Cryptography Bgv Ckks](docs/fhe-lattice-cryptography-bgv-ckks.md)
+- [Hardcoded Credentials Cluster Trust Cisco Expressway](docs/hardcoded-credentials-cluster-trust-cisco-expressway.md)
 - [Hardware Security Modules Pkcs11](docs/hardware-security-modules-pkcs11.md)
 - [Jwt Tokens](docs/jwt-tokens.md)
 - [Lattice Cryptography Learning With Errors](docs/lattice-cryptography-learning-with-errors.md)
@@ -490,6 +492,7 @@ Curated architectural references, cheat sheets, and systems engineering guides s
 - [Tls Certificate Chains Pki](docs/tls-certificate-chains-pki.md)
 - [Tls Ssl Handshake](docs/tls-ssl-handshake.md)
 - [Tor Onion Routing Circuit Crypto](docs/tor-onion-routing-circuit-crypto.md)
+- [Vulnerability Prioritization Cisa Kev Bod 26 04](docs/vulnerability-prioritization-cisa-kev-bod-26-04.md)
 - [Webauthn Fido2 Passkey Cryptographic Handshake](docs/webauthn-fido2-passkey-cryptographic-handshake.md)
 - [Wireguard Cryptokey Routing Protocol](docs/wireguard-cryptokey-routing-protocol.md)
 - [Wireguard Vpn Cryptography](docs/wireguard-vpn-cryptography.md)
